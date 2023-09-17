@@ -1,17 +1,30 @@
 body {
+  max-width: 1200px;
   width: 100%;
-  background-color: black;
-  height: 450px;
+  background-color: rgb(26, 25, 25);
+  margin: auto;
 }
 
-img {
-  display: inline-block;
-  vertical-align: auto;
- justify-content: center;
-  align-items: center ;
-  width: 14%;
-  height: auto;
-  margin: auto;
+.galerie
+{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+max-width: 1000px;
+width: 100%;
+padding: 20px;
+
+}
+img{
+  width: 100%; 
+  height: auto; 
+  max-width: 14%; 
+  margin-bottom: 20px; 
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: black;
 }
 
 
@@ -20,11 +33,12 @@ h1 {
   text-align: center;
 }
 
-.mante {
+.mante:hover {
   animation-name: fade;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   Animation-direction: normal; 
+  
 }
 
 @keyframes fade {
@@ -35,4 +49,4 @@ h1 {
   to {
     opacity: 0;
   }
-}
+  }
